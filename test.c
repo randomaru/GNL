@@ -6,12 +6,14 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 17:14:14 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/07 15:19:23 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/05/08 21:25:41 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include <stdio.h>
 
+#include "get_next_line.h"
+#include "./libft/libft.h"
 /*
 int		main(int argc, char *argv[])
 {
@@ -72,7 +74,10 @@ int                    get_next_line(const int fd, char **line)
 	while ((ret = read(fd, buf, BUFF_SIZE)) > 0)
 	{
 		buf[ret] = '\0';
-		text2 = ft_strjoin(text[fd], buf);
+		if (text[fd] == NULL)
+			text2 = ft_strdup(buf);
+		else
+			text2 = ft_strjoin(text[fd], buf);
 		free(text[fd]);
 		text[fd] = text2;
 		if (ft_strchr(buf, '\n'))

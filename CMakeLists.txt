@@ -9,4 +9,4 @@ add_executable(get_next_line
         get_next_line.c
         get_next_line.h
         test.c
-        main.c)
+        main.c test2.c)
