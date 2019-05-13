@@ -15,11 +15,23 @@
 #include "get_next_line.h"
 #include "./libft/libft.h"
 
-//static char		new_line()
+static char		ft_new_line(const int fd, char **line, static char *text)
+{
+	 int 	len;
+
+	 len = 0;
+	while (*text++ != '\n' && *text++ != '\0')
+		len++;
+	if (text[len] == '\n')
+	{
+		*line = ft_strsub(text, 0, len);
+
+	}
+}
 
 int				get_next_line(const int fd, char **line)
 {
-	static char		*file[12000];
+	static char		*text;
 	char 	buffer[BUFF_SIZE + 1];
 	int 	try;
 	char    *b_file;
@@ -28,25 +40,25 @@ int				get_next_line(const int fd, char **line)
 	{
 		buffer[try] = '\0';
 		//printf("%s\n", buffer);
-		if (file[fd] == NULL)
+		if (text == NULL)
 			b_file = ft_strdup(buffer);
 		else
-			b_file = ft_strjoin(file[fd], buffer);
-		if (file[fd])
-			free(file[fd]);
-		file[fd] = b_file;
+			b_file = ft_strjoin(text, buffer);
+		if (text)
+			free(text);
+		text = b_file;
         if (ft_strchr(buffer, '\n'))
         	break ;
 	}
-
-	if (
-
-			)
 
 	if (try < 0)
 		return (-1);
 	if (try == 0)
 		return (0);
-	//return (0);
+	else
+	 {
+		 ft_new_line(fd, line, text);
+		 return (1);
+	 }
 
 }
