@@ -14,8 +14,18 @@
 #include "get_next_line.h"
 #include "./libft/libft.h"
 
-int				get_next_line(const int fd, char **line)
+int 	main(void)
 {
-	static char	text[12000];
+	char *text = "abc\ncde";
+	char *text_sub;
+	int len;
 
+	len = 0;
+	printf("%s\n", text);
+	while (text[len] != '\n')
+		len++;
+	text_sub = ft_strdup(ft_strsub(text, len + 1, (ft_strlen(text) - len)));
+	//printf("len_text = %lu\n", ft_strlen(text));
+	printf("sub = %s\n", text_sub);
+	return (0);
 }
