@@ -8,5 +8,12 @@ include_directories(.)
 add_executable(get_next_line
         get_next_line.c
         get_next_line.h
-        test.c
-        main.c test2.c)
+        main.c
+        file.txt
+        cmake-build-debug/libft/ft_strchr.c
+        cmake-build-debug/libft/ft_strdel.c
+        cmake-build-debug/libft/ft_strdup.c
+        cmake-build-debug/libft/ft_strjoin.c
+        cmake-build-debug/libft/ft_strlen.c
+        cmake-build-debug/libft/ft_strsub.c
+        cmake-build-debug/libft/ft_strnew.c)
