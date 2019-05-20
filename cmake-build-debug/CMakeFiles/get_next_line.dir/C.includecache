@@ -15,8 +15,6 @@ string.h
 -
 
 /Users/tamarant/Desktop/lv1/get_next_line/get_next_line.c
-cmake-build-debug/libft/libft.h
--
 get_next_line.h
 /Users/tamarant/Desktop/lv1/get_next_line/get_next_line.h
 
@@ -28,5 +26,13 @@ unistd.h
 fcntl.h
 -
 cmake-build-debug/libft/libft.h
+-
+
+/Users/tamarant/Desktop/lv1/get_next_line/main.c
+stdio.h
+-
+get_next_line.h
+/Users/tamarant/Desktop/lv1/get_next_line/get_next_line.h
+fcntl.h
 -
 
