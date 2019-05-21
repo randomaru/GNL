@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strdel.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strdel.c.o"
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strdup.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strdup.c.o"
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strjoin.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strjoin.c.o"
+  "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strjoin_free.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.o"
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strlen.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strlen.c.o"
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strnew.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strnew.c.o"
   "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/libft/ft_strsub.c" "/Users/tamarant/Desktop/lv1/get_next_line/cmake-build-debug/CMakeFiles/get_next_line.dir/libft/ft_strsub.c.o"

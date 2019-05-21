@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 15:48:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/20 21:20:11 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/05/21 20:16:07 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 //# include "./libft/libft.h"
 # include <cmake-build-debug/libft/libft.h>
 //# include "./cmake-build-debug/libft/libft.a"
-# define BUFF_SIZE 5
+# define BUFF_SIZE 8
 # define MAX_FD 12000
 
 int		get_next_line(const int fd, char **line);

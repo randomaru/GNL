@@ -16,4 +16,4 @@ add_executable(get_next_line
         cmake-build-debug/libft/ft_strjoin.c
         cmake-build-debug/libft/ft_strlen.c
         cmake-build-debug/libft/ft_strsub.c
-        cmake-build-debug/libft/ft_strnew.c)
+        cmake-build-debug/libft/ft_strnew.c cmake-build-debug/libft/ft_strjoin_free.c)

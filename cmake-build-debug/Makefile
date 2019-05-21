@@ -258,6 +258,33 @@ libft/ft_strjoin.c.s:
 	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/libft/ft_strjoin.c.s
 .PHONY : libft/ft_strjoin.c.s
 
+libft/ft_strjoin_free.o: libft/ft_strjoin_free.c.o
+
+.PHONY : libft/ft_strjoin_free.o
+
+# target to build an object file
+libft/ft_strjoin_free.c.o:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.o
+.PHONY : libft/ft_strjoin_free.c.o
+
+libft/ft_strjoin_free.i: libft/ft_strjoin_free.c.i
+
+.PHONY : libft/ft_strjoin_free.i
+
+# target to preprocess a source file
+libft/ft_strjoin_free.c.i:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.i
+.PHONY : libft/ft_strjoin_free.c.i
+
+libft/ft_strjoin_free.s: libft/ft_strjoin_free.c.s
+
+.PHONY : libft/ft_strjoin_free.s
+
+# target to generate assembly for a file
+libft/ft_strjoin_free.c.s:
+	$(MAKE) -f CMakeFiles/get_next_line.dir/build.make CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.s
+.PHONY : libft/ft_strjoin_free.c.s
+
 libft/ft_strlen.o: libft/ft_strlen.c.o
 
 .PHONY : libft/ft_strlen.o
@@ -390,6 +417,9 @@ help:
 	@echo "... libft/ft_strjoin.o"
 	@echo "... libft/ft_strjoin.i"
 	@echo "... libft/ft_strjoin.s"
+	@echo "... libft/ft_strjoin_free.o"
+	@echo "... libft/ft_strjoin_free.i"
+	@echo "... libft/ft_strjoin_free.s"
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"

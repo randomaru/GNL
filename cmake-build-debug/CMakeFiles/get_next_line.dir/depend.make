@@ -17,6 +17,9 @@ CMakeFiles/get_next_line.dir/libft/ft_strdup.c.o: libft/libft.h
 CMakeFiles/get_next_line.dir/libft/ft_strjoin.c.o: libft/ft_strjoin.c
 CMakeFiles/get_next_line.dir/libft/ft_strjoin.c.o: libft/libft.h
 
+CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.o: libft/ft_strjoin_free.c
+CMakeFiles/get_next_line.dir/libft/ft_strjoin_free.c.o: libft/libft.h
+
 CMakeFiles/get_next_line.dir/libft/ft_strlen.c.o: libft/ft_strlen.c
 CMakeFiles/get_next_line.dir/libft/ft_strlen.c.o: libft/libft.h
 
