@@ -14,3 +14,5 @@ int get_next_line(int const fd, char **line);
 
 # Test!
 Run `./get_next_line tom_sawyer.txt` or `./get_next_line war_and_peace.txt` or use other files.
+
+![Image alt](https://github.com/randomaru/get_next_line/raw/master/gnl_gif.gif)
