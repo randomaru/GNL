@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   ft_strjoin_free.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/29 15:48:31 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/21 20:16:07 by tamarant         ###   ########.fr       */
+/*   Created: 2019/05/21 22:18:55 by tamarant          #+#    #+#             */
+/*   Updated: 2020/04/07 21:32:00 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
-# include <stdlib.h>
-# include <unistd.h>
-# include <fcntl.h>
-# include "libft/libft.h"
-//# include <cmake-build-debug/libft/libft.h>
-//# include "./cmake-build-debug/libft/libft.a"
-# define BUFF_SIZE 1000
-# define MAX_FD 12000
+#include "libft.h"
 
-int		get_next_line(const int fd, char **line);
+char	*ft_strjoin_free(char *s1, char *s2, int opt)
+{
+	char *res;
 
-#endif
+	if (!(res = ft_strjoin(s1, s2)))
+		return (NULL);
+	if (opt == 1 || opt > 2)
+		free(s1);
+	else if (opt >= 2)
+		free(s2);
+	return (res);
+}

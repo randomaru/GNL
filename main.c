@@ -1,38 +1,43 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/07 21:24:03 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/21 16:38:38 by tamarant         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include <stdio.h>
 #include "get_next_line.h"
-#include <fcntl.h>
 
-int 	main(void)
+int		main(int argc, char **argv)
 {
 	int		fd;
-	int		ret;
-	char	*one_line;
+	int		fd2;
+	char	*line;
 
-	 fd = open("file.txt", O_RDONLY);
-	 while ((ret = get_next_line(fd, &one_line)))
-	 {
-	 	if (ret > 0)
+	line = NULL;
+	fd = 0;
+	fd2 = 0;
+	if (argc == 1)
+        printf("Usage: %s <filename>\n", argv[0]);
+	else if (argc == 2)
+	{
+		fd = open(argv[1], O_RDONLY);
+		while (get_next_line(fd, &line) == 1)
 		{
-	 		printf("%s\n", one_line);
-	 		free(one_line);
+            printf("%s\n", line);
+			free(line);
 		}
-	 	if (ret == -1)
+		close(fd);
+	}
+	else
+	{
+		fd = open(argv[1], O_RDONLY);
+		fd2 = open(argv[2], O_RDONLY);
+		while (get_next_line(fd, &line) == 1)
 		{
-	 		printf("File does not exist.");
-	 		break;
+            printf("%s\n", line);
+			free(line);
+			if (get_next_line(fd2, &line) == 1)
+			{
+                printf("%s\n", line);
+				free(line);
+			}
 		}
-	 }
-	 return (0);
+		close(fd);
+		close(fd2);
+	}
+    return (0);
 }
